@@ -7,7 +7,7 @@
 #
 %define	rel	0.1
 Summary:	Delkin CardBus IDE CompactFlash Adapter driver
-Summary(pl):	Sterownik do adaptera CardBus IDE CompactFlash firmy Delkin
+Summary(pl.UTF-8):   Sterownik do adaptera CardBus IDE CompactFlash firmy Delkin
 Name:		delkin_cb
 Version:	0.1
 Release:	%{rel}
@@ -24,12 +24,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Linux kernel driver for Delkin CardBus IDE CompactFlash Adapter.
 
-%description -l pl
-Sterownik j±dra Linuksa do adaptera CardBus IDE CompactFlash firmy Delkin.
+%description -l pl.UTF-8
+Sterownik jÄ…dra Linuksa do adaptera CardBus IDE CompactFlash firmy Delkin.
 
 %package -n kernel%{_alt_kernel}-block-delkin_cb
 Summary:	Linux kernel driver for Delkin CardBus IDE CompactFlash Adapter
-Summary(pl):	Sterownik j±dra Linuksa do adaptera CardBus IDE CompactFlash firmy Delkin
+Summary(pl.UTF-8):   Sterownik jÄ…dra Linuksa do adaptera CardBus IDE CompactFlash firmy Delkin
 Release:	%{rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
@@ -39,13 +39,13 @@ Requires:	kernel%{_alt_kernel}-pcmcia
 %description -n kernel%{_alt_kernel}-block-delkin_cb
 Linux kernel driver for Delkin CardBus IDE CompactFlash Adapter.
 
-%description -n kernel%{_alt_kernel}-block-delkin_cb -l pl
-Sterownik j±dra Linuksa do adaptera CardBus IDE CompactFlash firmy
+%description -n kernel%{_alt_kernel}-block-delkin_cb -l pl.UTF-8
+Sterownik jÄ…dra Linuksa do adaptera CardBus IDE CompactFlash firmy
 Delkin.
 
 %package -n kernel%{_alt_kernel}-smp-block-delkin_cb
 Summary:	Linux SMP kernel driver for Delkin CardBus IDE CompactFlash Adapter
-Summary(pl):	Sterownik j±dra Linuksa SMP do adaptera CardBus IDE CompactFlash firmy Delkin
+Summary(pl.UTF-8):   Sterownik jÄ…dra Linuksa SMP do adaptera CardBus IDE CompactFlash firmy Delkin
 Release:	%{rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_smp}
@@ -55,8 +55,8 @@ Requires:	kernel%{_alt_kernel}-smp-pcmcia
 %description -n kernel%{_alt_kernel}-smp-block-delkin_cb
 Linux SMP kernel driver for Delkin CardBus IDE CompactFlash Adapter.
 
-%description -n kernel%{_alt_kernel}-smp-block-delkin_cb -l pl
-Sterownik j±dra Linuksa SMP do adaptera CardBus IDE CompactFlash firmy
+%description -n kernel%{_alt_kernel}-smp-block-delkin_cb -l pl.UTF-8
+Sterownik jÄ…dra Linuksa SMP do adaptera CardBus IDE CompactFlash firmy
 Delkin.
 
 %prep
